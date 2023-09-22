@@ -1,0 +1,5 @@
+---
+title: "Feature extraction and scan diagnostics"
+---
+
+This application holds the bullet processing steps and enables scan-data diagnostics that precede the score generating algorithm of the bullet matching pipeline.

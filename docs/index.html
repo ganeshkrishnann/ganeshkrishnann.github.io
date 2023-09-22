@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>bullet_magazine - Bullet magazine</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">bullet_magazine</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./shinyapps1.html" rel="" target="">
+ <span class="menu-text">Feature extraction and scan diagnostics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./shinyapps2.html" rel="" target="">
+ <span class="menu-text">Score statistics and decisions</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bullets-and-lands" id="toc-bullets-and-lands" class="nav-link active" data-scroll-target="#bullets-and-lands">Bullets and Lands</a>
+  <ul class="collapse">
+  <li><a href="#bullet-after-it-is-fired-from-a-gun" id="toc-bullet-after-it-is-fired-from-a-gun" class="nav-link" data-scroll-target="#bullet-after-it-is-fired-from-a-gun">Bullet after it is fired from a gun</a></li>
+  <li><a href="#close-up-of-bullet-under-a-comparison-microscope" id="toc-close-up-of-bullet-under-a-comparison-microscope" class="nav-link" data-scroll-target="#close-up-of-bullet-under-a-comparison-microscope">Close-up of bullet under a comparison microscope</a></li>
+  <li><a href="#land-engraved-area-lea" id="toc-land-engraved-area-lea" class="nav-link" data-scroll-target="#land-engraved-area-lea">Land engraved area (LEA)</a></li>
+  </ul></li>
+  <li><a href="#scans-to-scores" id="toc-scans-to-scores" class="nav-link" data-scroll-target="#scans-to-scores">Scans-to-scores</a>
+  <ul class="collapse">
+  <li><a href="#bullet-matching-pipeline" id="toc-bullet-matching-pipeline" class="nav-link" data-scroll-target="#bullet-matching-pipeline">Bullet matching pipeline</a></li>
+  <li><a href="#scanning-using-comparison-microscope" id="toc-scanning-using-comparison-microscope" class="nav-link" data-scroll-target="#scanning-using-comparison-microscope">Scanning using comparison microscope</a></li>
+  <li><a href="#extracted-profiles-from-cross-sections-of-lea" id="toc-extracted-profiles-from-cross-sections-of-lea" class="nav-link" data-scroll-target="#extracted-profiles-from-cross-sections-of-lea">Extracted profiles from cross-sections of LEA</a></li>
+  <li><a href="#profiles-with-marked-grooves" id="toc-profiles-with-marked-grooves" class="nav-link" data-scroll-target="#profiles-with-marked-grooves">Profiles with marked grooves</a></li>
+  <li><a href="#signature" id="toc-signature" class="nav-link" data-scroll-target="#signature">Signature</a></li>
+  <li><a href="#aligned-signatures" id="toc-aligned-signatures" class="nav-link" data-scroll-target="#aligned-signatures">Aligned signatures</a></li>
+  <li><a href="#peak-and-valley-matching-of-striations" id="toc-peak-and-valley-matching-of-striations" class="nav-link" data-scroll-target="#peak-and-valley-matching-of-striations">Peak and valley matching of striations</a></li>
+  <li><a href="#land-to-land-scores" id="toc-land-to-land-scores" class="nav-link" data-scroll-target="#land-to-land-scores">Land-to-land scores</a></li>
+  <li><a href="#bullet-to-bullet-scores" id="toc-bullet-to-bullet-scores" class="nav-link" data-scroll-target="#bullet-to-bullet-scores">Bullet-to-bullet scores</a></li>
+  </ul></li>
+  <li><a href="#shiny-apps" id="toc-shiny-apps" class="nav-link" data-scroll-target="#shiny-apps">Shiny apps</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bullet magazine</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This website provides and introduction to automated scores, visualizations and decision-making framework used in algorithmic forensic bullet comparisons. We take you through a series of visuals explaining the key parts of the automated comparison procedure that facilitates decision-making based on scores.</p>
+<section id="bullets-and-lands" class="level1 page-columns page-full">
+<h1>Bullets and Lands</h1>
+<section id="bullet-after-it-is-fired-from-a-gun" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="bullet-after-it-is-fired-from-a-gun">Bullet after it is fired from a gun</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/bullet-nist-annotated.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Bullet collected after it was fired from a gun. The LEAs, GEAs and the location where LEA scans are taken can be seen here. Unannotated source: NIST</figcaption>
+</figure>
+</div>
+</section>
+<section id="close-up-of-bullet-under-a-comparison-microscope" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="close-up-of-bullet-under-a-comparison-microscope">Close-up of bullet under a comparison microscope</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/cropped_comparison_scope_photo.png" class="img-fluid figure-img" width="481"></p>
+<figcaption class="figure-caption margin-caption">Image depicts what firearms examiners see in a comparison microscope. These are two bullets aligned one over the other. The black vertical line separates between two bullets. The striation marks are visible on both the LEAs and the firearm examiners tries to align them by rotating one of the bullets till they seem to align correctly. If two LEAs are aligned correctly, the examiner visually makes a comparison and deduction on whether the two LEAs seem to match. If they conclude its a match, they quickly make synchronized in-phase rotations of both bullets to compare the other 5 pairs too.</figcaption>
+</figure>
+</div>
+</section>
+<section id="land-engraved-area-lea" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="land-engraved-area-lea">Land engraved area (LEA)</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/x3p_image1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The image shows a rendering of the scan of the bullet land engraved area (LEA) which includes the grooves on either side and a break-off region at the bottom. The break-off region shows the flaking off of parts of the bullet, which happens after the firing process of the gun. The process initiates when the firing pin hits the bottom, and the breaking off at the bottom can happen any time between then and the bullet moving through the barrel of the gun and hitting its target. The light silver-grey line shows the region from which cross-cuts are extracted for automatic matching of the bullet lands.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="scans-to-scores" class="level1 page-columns page-full">
+<h1>Scans-to-scores</h1>
+<section id="bullet-matching-pipeline" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="bullet-matching-pipeline">Bullet matching pipeline</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/bullet-matching-pipeline.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The different steps in the bullet matching pipeline for automatic matching of bullets is presented here. The data flow starts with the scanning process where the LEAs are scanned, before proceeding to model development and information extraction, and then model results which include pairwise land-to-land scores, and bullet level scores.</figcaption>
+</figure>
+</div>
+</section>
+<section id="scanning-using-comparison-microscope" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="scanning-using-comparison-microscope">Scanning using comparison microscope</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/ComparisonMicroscope.png" class="img-fluid figure-img" width="489"></p>
+<figcaption class="figure-caption margin-caption">Comparison Microscope (left). Each bullet is placed on a separate stage and can be individually rotated; the eyepiece combines the two views (right) to facilitate comparisons.</figcaption>
+</figure>
+</div>
+</section>
+<section id="extracted-profiles-from-cross-sections-of-lea" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="extracted-profiles-from-cross-sections-of-lea">Extracted profiles from cross-sections of LEA</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/profiles.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The crosscut values shown are extracted at a fixed distance from the bottom of the land. These profiles therefore represent the scrapings on the land surface but at a fixed height from the bottom.</figcaption>
+</figure>
+</div>
+</section>
+<section id="profiles-with-marked-grooves" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="profiles-with-marked-grooves">Profiles with marked grooves</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/profile_and_groove.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The image shows grooves marked in blue on the profiles. The identification of grooves on the LEA scan is done using an automatic groove identification algorithm. The part of the profile between the two grooves is used for analysis. The green part shows a smoothed marking that is used in signatures.</figcaption>
+</figure>
+</div>
+</section>
+<section id="signature" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="signature">Signature</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/signature.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The marking shown here is the signature of the land which is extracted by further processing the profiles by removing the trend of the cross-section but still preserving the striations observed on the land surface. These land signatures are used for comparing two lands</figcaption>
+</figure>
+</div>
+</section>
+<section id="aligned-signatures" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="aligned-signatures">Aligned signatures</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/align_signature.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The algorithmic alignment of two signatures extracted are shown here. The markings are aligned by using the regions of maximum agreement which is computed by maximizing the cross-correlation between them</figcaption>
+</figure>
+</div>
+</section>
+<section id="peak-and-valley-matching-of-striations" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="peak-and-valley-matching-of-striations">Peak and valley matching of striations</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/peak_valley_two_signatures.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The figure depicts automatically calculated peaks (blue) and valleys (red), and their width based on signatures extracted from a land engraved area. Two different signatures can be visually compared to a certain extent based on how well the peaks and valleys seem to align. The automatic calculation metric is based on Consecutively Matching Striae (CMS) computations where the identification of these peaks, valleys and their widths use a well-quantified procedure. This is different from the visual comparison made by examiners where the peaks are counted based on intuitive recognition and identification</figcaption>
+</figure>
+</div>
+</section>
+<section id="land-to-land-scores" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="land-to-land-scores">Land-to-land scores</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/land-to-land-plot2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">The land-to-land random forest score for 36 comparisons is shown here as a heatmap. The diagonal shows 6 pairs of in-phase comparisons. In-phase here means that, for two bullets fired from the same barrel, each of the 6 LEAs from one bullet will only have one other LEA on the second bullet to which it is supposed to match. Therefore, only 6 pairs from the 36 pair-wise comparisons will have higher match scores than the rest. This is an immediate extension of the firing phenomenon of the gun, where a barrel has 6 Lands that engrave 6 LEAs on the bullet, therefore, for two bullets fired from the same gun, each bullet will only have 1 LEA that passes through a specific land of the barrel. Thus, there can only be 6 pairs of LEAs owing to the 6 lands of the barrel, and these 6 pairs are supposed to be represented on the diagonal of the given heatmap.</figcaption>
+</figure>
+</div>
+</section>
+<section id="bullet-to-bullet-scores" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="bullet-to-bullet-scores">Bullet-to-bullet scores</h2>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/bullet-to-bullet-plot.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Heatmap showing the scores of 5 different bullets compared with each other making 25 different combinations. The diagonal of this heatmap shows the score for a bullet when compared with itself which will alway be 1. The rest of the comparisons show the statistical score for two different bullets that are being compared. These bullet-to-bullet scores incorporate the random forest scores of all in-phase pairs of land-to-land matches for two bullets under consideration. Uncertainty is embedded in the heatmap through the presence of multiple and similar such scores, due relative inference of the score of the comparison under consideration, with the scores of all other comparisons. There is also some ambiguity introduced due to the scales and color gradients</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="shiny-apps" class="level1">
+<h1>Shiny apps</h1>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Listening on http://127.0.0.1:3874</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>
+<script type="application/shiny-prerendered" data-context="server-extras">
+ojs_define <- function(..., .session = shiny::getDefaultReactiveDomain()) {
+  quos <- rlang::enquos(...)
+  vars <- rlang::list2(...)
+  nm <- names(vars)
+  if (is.null(nm)) {
+    nm <- rep_len("", length(vars))
+  }
+  mapply(function(q, nm, val) {
+    # Infer name, if possible
+    if (nm == "") {
+      tryCatch({
+        nm <- rlang::as_name(q)
+      }, error = function(e) {
+        code <- paste(collapse = "\n", deparse(rlang::f_rhs(q)))
+        stop("ojs_define() could not create a name for the argument: ", code)
+      })
+    }
+    .session$output[[nm]] <- val
+    outputOptions(.session$output, nm, suspendWhenHidden = FALSE)
+    .session$sendCustomMessage("ojs-export", list(name = nm))
+    NULL
+  }, quos, nm, vars, SIMPLIFY = FALSE, USE.NAMES = FALSE)
+  invisible()
+}
+</script>
+</p>
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="dependencies">
+{"type":"list","attributes":{},"value":[]}
+</script>
+<!--/html_preserve-->
+<!--html_preserve-->
+
+<script type="application/shiny-prerendered" data-context="execution_dependencies">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47]}},"value":[{"type":"character","attributes":{},"value":["backports","base","base64enc","bslib","cachem","callr","checkmate","cli","compiler","datasets","digest","ellipsis","evaluate","fastmap","graphics","grDevices","htmltools","htmlwidgets","httpuv","jquerylib","jsonlite","knitr","later","lifecycle","magrittr","memoise","methods","mime","processx","promises","ps","R6","Rcpp","rlang","rmarkdown","rstudioapi","sass","shiny","slickR","stats","tools","utils","webshot","xfun","xml2","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.4.1","4.3.1","0.1-3","0.5.0","1.0.8","3.7.3","2.2.0","3.6.1","4.3.1","4.3.1","0.6.31","0.3.2","0.21","1.1.1","4.3.1","4.3.1","0.5.5","1.6.2","1.6.11","0.1.4","1.8.5","1.43","1.3.1","1.0.3","2.0.3","2.0.1","4.3.1","0.12","3.8.1","1.2.0.1","1.7.5","2.5.1","1.0.10","1.1.1","2.22","0.14","0.4.6","1.7.4","0.6.0","4.3.1","4.3.1","4.3.1","0.5.4","0.39","1.3.4","1.8-4","2.3.7"]}]}]}
+</script>
+<!--/html_preserve-->
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

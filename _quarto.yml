@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "bullet_magazine"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: shinyapps1.qmd
+        text: Feature extraction and scan diagnostics
+      - href: shinyapps2.qmd
+        text: Score statistics and decisions
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
