@@ -59,36 +59,3 @@ This website provides and introduction to automated scores, visualizations and d
 
 ![Heatmap showing the scores of 5 different bullets compared with each other making 25 different combinations. The diagonal of this heatmap shows the score for a bullet when compared with itself which will alway be 1. The rest of the comparisons show the statistical score for two different bullets that are being compared. These bullet-to-bullet scores incorporate the random forest scores of all in-phase pairs of land-to-land matches for two bullets under consideration. Uncertainty is embedded in the heatmap through the presence of multiple and similar such scores, due relative inference of the score of the comparison under consideration, with the scores of all other comparisons. There is also some ambiguity introduced due to the scales and color gradients](figures/bullet-to-bullet-plot.png)
 
-# Shiny apps
-
-```{r}
-
-library(shiny)
-library(slickR)
-
-ui <- fluidPage(
-   sidebarLayout(
-      sidebarPanel(
-        ####
-      ),
-
-      mainPanel(
-         slickROutput("slickr", width="500px")
-      )
-   )
-)
-
-server <- function(input, output) {
-
-  output$slickr <- renderSlickR({
-    imgs <- list.files("E:/Git-Repos/website_bullet_applications/quarto_website/figures/", pattern=".png", full.names = TRUE)
-    slickR(imgs)
-  })
-
-}
-
-# Run the application
-shinyApp(ui = ui, server = server)
-
-
-```
