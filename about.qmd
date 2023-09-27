@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+This website provides information on various elements of forensic bullet matching in automated settings. The overall goal of the website is to provide a platform that enables data experts, model experts and domain experts to make decisions, diagnose issues, and account for uncertainty at various stages. It gives a background to various steps of the automated bullet matching pipeline, starting from scans to scores and how various algorithmic results can be used to make coherent decisions under uncertainty. The website hosts two applications that is used for visual diagnostics and process approval in both pre-score settings and post-score settings, which allows inspection, validation of various different levels of the bullet matching pipeline.
