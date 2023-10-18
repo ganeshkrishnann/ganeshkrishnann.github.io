@@ -102,7 +102,7 @@
     "href": "shinyapps1.html",
     "title": "Feature extraction and scan diagnostics",
     "section": "",
-    "text": "This application holds the bullet processing steps and enables scan-data diagnostics that precede the score generating algorithm of the bullet matching pipeline."
+    "text": "This application holds the bullet processing steps and enables scan-data diagnostics that precede the score generating algorithm of the bullet matching pipeline.\nThe application is designed to identify conformity issues when dealing with a large number of scans, allowing the examiner/ user to inspect, diagnose and fix issues with specific LEAs (Land engraved areas) and bullets.\nAfter fixing these issues, the application then proceeds through the steps of striation identification, profile extraction, signature generation, noise reduction, cross-comparisons of signatures and feature-score calculations.\nThe application is therefore designed to assist in generating a cross-comparison dataset with bullet and land level scores, ranging from different feature-scores to a composite machine learning score that is generated using the feautures."
   },
   {
     "objectID": "shinyapps2.html",
