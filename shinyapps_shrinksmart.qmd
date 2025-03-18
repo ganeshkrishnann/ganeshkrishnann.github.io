@@ -1,0 +1,9 @@
+---
+title: "ShrinkSmart: Community Data Explorer"
+---
+
+The shrinksmart application is about exploring data from the iowa community.
+
+```{=html}
+<iframe width="1441" height="1441" src="https://ganeshkrishnann.shinyapps.io/shrinksmart_webapp/" title="ShrinkSmart: Community Data Exploration"></iframe>
+```

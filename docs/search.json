@@ -110,5 +110,12 @@
     "title": "Score statistics and decisions",
     "section": "",
     "text": "This application extracts pairwise scoring at LEA levels and bullet levels. It also picks various feature-wise and pre-scoring algorithm results and visuals to aid the decision making process. It allows bullet comparison by enabling human- centered aids from the bullet matching pipeline that correspond to different pairwise scores."
+  },
+  {
+    "objectID": "shinyapps_shrinksmart.html",
+    "href": "shinyapps_shrinksmart.html",
+    "title": "ShrinkSmart: Community Data Explorer",
+    "section": "",
+    "text": "The shrinksmart application is about exploring data from the iowa community."
   }
 ]

@@ -13,6 +13,8 @@ website:
         text: Feature extraction and scan diagnostics
       - href: shinyapps2.qmd
         text: Score statistics and decisions
+      - href: shinyapps_shrinksmart.qmd
+        text: Other Projects
 
 format:
   html:
